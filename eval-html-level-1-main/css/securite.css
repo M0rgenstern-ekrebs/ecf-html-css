@@ -1,0 +1,139 @@
+:root
+{
+    --bg1:#f8d7da;
+    --bg2:#e2f0d9;
+    --bg3:#e9ecef;
+    --bg4: white;
+
+    --color-titre:#721c24;
+    --color-important:#dc3545;
+    --color-consignes:#155724;
+    --color-commentaire:#6c757d ;
+
+    --accent1: #FFFF00;
+}
+
+body
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--bg3);
+    display: flex;
+    justify-content: center;
+}
+
+/* #consignes
+{
+} */
+
+#consignes, .consignes__titre, ul
+{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.consignes__titre
+{
+    width: 720px;
+    background-color: var(--bg1);
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    gap: 5px;
+    h1
+    {
+        color: var(--color-titre);
+        font-size: 1.8rem;
+        font-weight: 750;
+        margin: 0px;
+    }
+    p
+    {
+        color: var(--color-important);
+        font-size: 1.2rem;
+        font-weight: 750;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    p::before, p::after
+    {
+        content: "⚠️";
+    }
+}
+
+#consignes
+{
+    background-color: var(--bg4);
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 15px;
+    border: 2px dashed var(--accent1);
+    width: 755px;
+    ul
+    {
+        padding: 0;
+        list-style: none;
+        width: 700px;
+        gap: 7px;
+        li
+        {
+            color: var(--color-consignes);
+            font-size: 0.9rem;
+            font-weight: 800;
+            width: 720px;
+            background-color: var(--bg2);
+            box-sizing: border-box;
+            padding: 15px 10px;
+            border-radius: 4px;
+        }
+    }
+
+    img
+    {
+        border-radius: 5px;
+    }
+}
+
+.interdit::before
+{
+    content: "🚫";
+}
+
+.faire::before
+{
+    content: "✅";
+}
+
+.attention::before
+{
+    content: "⚠️";
+}
+
+
+.commentaire
+{
+    color: var(--color-commentaire);
+    font-size: 0.8rem;
+    font-weight: 800;
+    box-sizing: border-box;
+    background-color: var(--bg3);
+    width: 720px;
+    padding: 15px 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+.commentaire::before, .commentaire::after
+{
+    content: "⚠️";
+}
+
+
+/* Largeur du cadre principal : 960px centré sur la page. Police : Arial, sans-serif
+/* 
+⚠️
+🚫
+✅
+*/

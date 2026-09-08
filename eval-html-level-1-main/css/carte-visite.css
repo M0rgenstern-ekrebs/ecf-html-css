@@ -1,6 +1,5 @@
 :root
 {
-    /* TODO: canger variable names */
     --bg1: #4CAF50;
     --bg2: #8BC34A;
     --couleur1: #f0f2f5;
@@ -11,18 +10,17 @@
     --font-size-default-card: 1.3rem;
 
     --flex-gap-carte: 10px;
-
 }
 
 body
 {
     background-color: var(--couleur1);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 article
 {
     color: var(--couleur1);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
