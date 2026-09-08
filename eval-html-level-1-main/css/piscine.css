@@ -1,0 +1,106 @@
+:root
+{
+	--panneau-bg: #ffffff;
+    --panneau_bordure: #0c4e94;
+    --panneau_titre-bg: #0c4e94;
+    --panneau_titre-fg: #ffffff;
+    --panneau_texte-important: #d31f26;
+}
+
+body
+{
+
+    background-image: url("../img/wood.jpg");
+    background-size: cover;       /* L'image s'adapte pour couvrir tout l'écran */
+    background-repeat: no-repeat; /* Empêche l'image de se répéter en mosaïque */
+    background-position: center;  /* Centre l'image sur la page */
+    background-attachment: fixed; /* Garde l'image fixe lors du défilement */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#panneau-piscine
+{
+    font-family: sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    width: 920px;
+    height: 920px;
+    background-color: var(--panneau-bg);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.panneau-piscine__box /*aurait préféré faire autrement*/
+{
+    border: 8px solid var(--panneau_bordure);
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 
+{
+    margin-top: -80px;
+    color: var(--panneau_titre-fg);
+    background-color: var(--panneau_titre-bg);
+    padding: 15px 100px;
+    border-radius: 10px;
+    font-size: 3.1rem;
+    font-weight: 850;
+}
+
+img
+{
+    height: 100px;
+    size: 100px;
+    align-self: center;
+    margin-bottom: 50px;
+}
+
+ul
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    li 
+    {
+        font-size: 2.2rem;
+        list-style: none;
+    }
+}
+
+.txt__large
+{
+    font-size: 3rem
+}
+
+.txt__gras
+{
+    font-weight: 750;
+}
+
+.txt__important
+{
+    color: #d31f26;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+
+.margin__bottom
+{
+    margin-bottom: 15px;
+}
