@@ -9,13 +9,17 @@
     --font-size-default-txt: 1.2rem;
     --font-size-default-card: 1.3rem;
 
-    --flex-gap-carte: 10px;
+    --default-gap: 10px;
 }
 
 body
 {
     background-color: var(--couleur1);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 article
@@ -25,7 +29,7 @@ article
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 25px;
     *
     {
         margin: 0;
@@ -44,7 +48,7 @@ article
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: var(--flex-gap-carte);
+    gap: var(--default-gap);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     font-size: var(--font-size-default-card);
 
@@ -53,12 +57,15 @@ article
         order: -1;
         font-size: 1.3rem;
         font-weight: 500;
+        margin-bottom: 5px;
     }
 
     #profession
     {
         font-size: 1.7rem;
         font-weight: 300;
+        margin-top: -3px;
+        margin-bottom: var(--default-gap);
     }
 
     h2
@@ -78,11 +85,10 @@ article
     {
         display: flex;
         flex-direction: column;
-        gap: var(--flex-gap-carte);
+        gap: var(--default-gap);
     }
     .img__holder
     {
-        /* margin-left: 350px; */
         border: 5px solid var(--couleur1);
         width: 100px;
         height: 100px;
@@ -114,7 +120,7 @@ ul
 {
     display: flex;
     flex-direction: column;
-    gap: var(--flex-gap-carte);
+    gap: var(--default-gap);
     list-style: none;
     li
     {
@@ -131,6 +137,7 @@ ul
 .email
 {
     color: var(--couleur3);
+    margin-top: var(--default-gap);
 }
 
 .email::before
